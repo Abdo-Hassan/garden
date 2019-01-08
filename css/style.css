@@ -1,0 +1,406 @@
+/*GENERAL styles*/
+*{
+	font-family: Trebuchet MS;
+}
+
+body{
+  overflow: hidden;
+}
+
+/*edit style pace js loading*/
+.pace .pace-progress {
+    background: #e74c3c;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 4px;
+}
+/*edit style pace js loading*/
+
+body,ul ,li{
+	margin: 0;
+	padding: 0;
+}
+
+p,li,h1,h2,h3,h4{
+	color: #4e4e4e;
+}
+
+body{
+	background-color: #f7f7f7;
+}
+
+/* Start Section Loading */
+.loading_overlay {
+    background:#222;
+    color:#FFF;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    z-index:99999
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #FFF;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2.0s infinite ease-in-out;
+  animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/* End Section Loading */
+
+/*GENERAL styles*/
+/*start header section*/
+header{
+	background-color: #e5e5e5;
+	padding:20px 0;
+	overflow: hidden;
+}
+
+.container {
+	width:96%;
+	max-width: 1200px;
+	margin:0 auto;
+	padding:0 2%;
+}
+
+header img{
+	width: 140px;
+	float: left;
+}
+
+header nav{
+	float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+header nav ul{margin: 0}
+
+header nav ul li{
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #4e4e4e;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header nav ul .active a{
+	color: #1abb9c;
+}
+
+/*end header section*/
+
+/*start banner*/
+#main_banner{
+	background: url('../images/banner.jpg')no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 700px;
+}
+/*end banner*/
+/*start selling_points*/
+#selling_points{
+ margin-top: 60px; 
+}
+
+#selling_points li {
+  text-align: center;
+  width: 23%;
+  float: left;
+  padding: 1%;
+  list-style:none;
+  line-height: 1.6em;
+}
+
+#selling_points:after{
+    clear: both;
+    display: block;
+    content: "";
+}
+/*end selling_points*/
+
+/*start latest work*/
+#latest_work{
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 2px solid #e4e4e4;
+}
+
+#latest_work h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#latest_work ul li{
+  width: 32%;
+  float: left;
+  list-style: none;
+}
+
+#latest_work img {
+  width: 100%;
+}
+
+#latest_work li:nth-child(2){
+  margin:0 2%;
+}
+
+/*clear float*/
+#latest_work:after{ 
+  content: "";
+  clear: both;
+  display: block;
+}
+
+#latest_work h3 {
+  margin-bottom: 0;
+}
+
+#latest_work p{
+  line-height: 1.6em
+}
+
+#latest_work .tags{
+  color: #bbb;
+  font-size: 14 px;
+  margin-top: 5px;
+}
+
+#quote{
+  margin-top: 60px;
+  width: 60%;
+  padding:40px 20%;
+  background: url('../images/quote.png')no-repeat center 20px;
+  background-color: #efefef;
+  color: #4e4e4e;
+  font-size: 20px;
+  line-height: 1.6em;
+  text-align: center
+}
+/*end latest work*/
+
+/*start footer*/
+footer{
+  background-color: #202020;
+  padding:30px 0;
+  border-top:10px solid #151515;
+  overflow: hidden;
+}
+
+footer h4{
+  margin:0;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+footer ul{
+  float: left;
+  width: 25%;
+  list-style: none;
+}
+
+footer li {
+	color: #aaa;
+	width: 80%;
+	margin:20px 0;
+	font-size: 14px;
+	line-height: 1.6em
+}
+
+footer .tw{
+	padding-left: 20px;
+	background: url('../images/tweet.png')no-repeat left 6px;
+}
+
+#copyright{
+	clear: both;
+  padding-top: 30px;
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+  border-top: 2px solid #333;
+  color: #999;
+  font-size: 14px;  
+}
+
+/*end footer*/
+
+/* media query */
+/*tablet screens*/
+@media screen and (max-width:960px){
+	
+	#selling_points li {
+		width:40%;
+		padding: 0 5%;
+    margin: 20px 0;
+	}
+
+  footer ul{
+    width:50%
+  }
+
+  footer ul:nth-child(odd){
+    clear:both;
+  }
+
+  #quote{
+    width: 90%;
+    padding:40px 5%;
+  }
+}
+
+/*small screens*/
+@media screen and (max-width:768px){
+  header nav{
+    float: none;
+  }
+
+  header nav ul li{
+    margin-left:0;
+    width: 16.66%;
+    text-align: center
+  }
+
+  header img{
+    float: none;
+    margin:0 auto 15px;
+    display: block;
+  }
+
+  #latest_work ul li{
+    width: 60%;
+    margin:30px 20% !important;
+    float: none;
+  }
+
+  #latest_work h2{
+    text-align: center;
+  }
+
+   footer ul {
+    width: 100%;
+    float: none;
+    border-top: 2px solid #333;
+  }
+}
+
+/*mobile screens*/
+@media  screen and (max-width: 480px){
+  #selling_points li{
+    width: 80%;
+    padding: 0 10%;
+    margin:20px 0;
+  }
+
+  #latest_work ul li{
+    width: 80%;
+    margin:30px 10% !important;
+  }
+
+  #quote{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  footer ul {
+    width: 100%;
+    float: none;
+    border-top: 2px solid #333;
+  }
+
+  #burger-nav{
+    width: 100%;
+    height: 40px;
+    background:url('../images/burger.png')no-repeat 98% center;
+    cursor: pointer;
+  }
+
+  header{
+    padding-bottom: 0;
+  }
+  
+  header nav{
+    background-color: #555;
+  }
+
+   header .container{
+    padding:0;
+    width: 100%;
+  }
+
+  header nav ul li{
+    float: none;
+    width: 100%;
+    margin:0;
+  }
+
+  header nav ul li a{
+    display: block;
+    text-align: center;
+    padding:10px;
+    color: #999;
+    border-top:1px solid #4f4f4f;
+  }
+  
+  header nav ul{
+    height:0;
+    overflow: hidden;
+  }
+
+  header nav ul.open{
+    height: auto;
+  }
+ 
+}
