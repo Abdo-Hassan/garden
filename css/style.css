@@ -24,8 +24,12 @@ body,ul ,li{
 	padding: 0;
 }
 
-p,li,h1,h2,h3,h4{
-	color: #4e4e4e;
+p,li,h1,h2,h4{
+	color:#3d794c;
+}
+
+h3{
+  color:#699205;
 }
 
 body{
@@ -103,9 +107,11 @@ header{
 	padding:0 2%;
 }
 
-header img{
+header h1{
 	width: 140px;
-	float: left;
+  float: left;
+  margin: 0;
+  color: #699205;
 }
 
 header nav{
@@ -133,14 +139,14 @@ header nav ul li a {
 }
 
 header nav ul .active a{
-	color: #1abb9c;
+	color: #699205;
 }
 
 /*end header section*/
 
 /*start banner*/
 #main_banner{
-	background: url('../images/banner.jpg')no-repeat center center;
+	background: url('../images/garden.jpeg')no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -313,7 +319,7 @@ footer .tw{
     text-align: center
   }
 
-  header img{
+  header h1{
     float: none;
     margin:0 auto 15px;
     display: block;
